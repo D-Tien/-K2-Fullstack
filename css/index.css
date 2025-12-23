@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+header p {
+  color: #666;
+  margin-top: 10px;
+}
+
+.day-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.day-card h2 {
+  margin-bottom: 15px;
+  color: #0077ff;
+}
+
+.day-card ul {
+  list-style: none;
+}
+
+.day-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.day-card li:last-child {
+  border-bottom: none;
+}
+
+.day-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.day-card a:hover {
+  color: #0077ff;
+}
+
+.src {
+  background: #0077ff;
+  color: #fff !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.src:hover {
+  background: #005fcc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
