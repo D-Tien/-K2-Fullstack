@@ -1,0 +1,112 @@
+/* ----------
+Bài 1
+---------- */
+#Ex01 .background {
+  background-color: #334455;
+  width: 800px;
+  height: 160px;
+  border-radius: 10px;
+  padding-left: 25px;
+  font-family: system-ui;
+}
+
+#Ex01 p {
+  font-size: 13px;
+  color: white;
+}
+#Ex01 h2 {
+  padding-top: 10px;
+  margin-bottom: 1%;
+  color: white;
+}
+#Ex01 form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#Ex01 input {
+  width: 150px;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 2px;
+}
+
+#Ex01 button {
+  padding: 5px 7px;
+  border: none;
+  border-radius: 2px;
+  font-size: 11px;
+  background-color: #f8db35;
+}
+#Ex01 .background:hover input::placeholder {
+  color: #ffa507;
+  background-color: #ddd;
+}
+#Ex01 .background:hover button {
+  background-color: #ffa507;
+  color: white;
+}
+#Ex01 span {
+  color: #ffa507;
+}
+/* 
+------------
+Bài 2
+------------ */
+
+#Ex02 .quote-left {
+  position: absolute;
+  top: 280px;
+  left: 10px;
+  font-size: 24px;
+}
+#Ex02 .quote-right {
+  position: absolute;
+  top: 380px;
+  left: 560px;
+  font-size: 24px;
+}
+
+#Ex02 p {
+  width: 500px;
+}
+
+/* 
+------------
+Bài 4
+------------ */
+
+#Ex04 .header {
+  color: #535b7e;
+  font-family: system-ui;
+}
+
+#Ex04 p {
+  color: #595f6a;
+  font-family: system-ui;
+  font-size: 13px;
+  width: 500px;
+}
+
+#Ex04 span {
+  background-color: #e3e7ee;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#Ex04 p > a {
+  color: #06a0ff;
+}
+
+#Ex04 .box {
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-family: system-ui;
+  font-size: 12px;
+  padding: 20px;
+  color: rgb(107, 104, 104);
+  width: 500px;
+}
