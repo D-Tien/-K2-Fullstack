@@ -1,0 +1,1 @@
+CÁC THUỘC TÍNH ĐỊNH DẠNG VĂN BẢN <!-- Giá trị kế thừa - initial -> kế thừa giá trị mặc định của trình duyệt - inherit -> Kế thừa từ thành phần cha Các đơn vị hay dùng 1. Đơn vị tuyệt đối - px (pixel) - pt = 1,3 x px 2.Đơn vị tương đối - em - rem - % - vw - vh -->
