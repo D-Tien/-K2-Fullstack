@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* --------------------
+Bài 1
+-------------------- */
+#Ex01 .bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+#Ex01 .container {
+  position: relative;
+}
+
+#Ex01 h1 {
+  padding: 10px;
+}
+
+#Ex01 .box {
+  position: absolute;
+  left: 58%;
+  transform: translate(-50%, -245%);
+  height: 250px;
+  width: 470px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: system-ui;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+/* --------------------
+Bài 2
+-------------------- */
+#Ex02 .item {
+  margin-bottom: 10px;
+}
+
+#Ex02 label {
+  background-color: #d95924;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  font-family: system-ui;
+  font-size: 14px;
+  display: block;
+}
+#Ex02 .content {
+  display: none;
+}
+
+#Ex02 input {
+  display: none;
+}
+
+#Ex02 label::before {
+  content: "+";
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#Ex02 .content {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+#Ex02 input:checked ~ .content {
+  display: block;
+  border: none;
+}
+
+#Ex02 input:checked + label::before {
+  content: "–";
+}
+/* --------------------
+Bài 3
+-------------------- */
+
+#Ex03 {
+  font-family: system-ui;
+}
+#Ex03 .header {
+  text-align: center;
+  color: #383838;
+  padding-bottom: 20px;
+}
+
+#Ex03 .menu {
+  display: flex;
+  gap: 30px;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+#Ex03 .item {
+  background: #fff;
+  margin: 10px;
+  padding: 30px 20px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 240px;
+}
+
+#Ex03 .icon {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f1a83b;
+  border-radius: 50px;
+  justify-items: center;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+#Ex03 button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 0.7em;
+  background-color: #f2a93b;
+}
+
+#Ex03 .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
