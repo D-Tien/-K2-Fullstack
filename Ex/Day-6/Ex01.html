@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day6</title>
+    <link rel="stylesheet" href="../../css/Day6.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="Ex01">
+      <h1>Bài tập 1</h1>
+      <div class="container">
+        <h2>Hey there</h2>
+        <p>
+          <span>We'd like to hear from you.</span>
+          Send us your message or just say hi with our contact form or directly
+          via phone, we love to chat.
+        </p>
+        <div class="form">
+          <div class="item">
+            <div class="input">
+              <label class="icon-label">
+                <i class="fa-solid fa-user"></i>
+              </label>
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Your name"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="input">
+              <label class="icon-label">
+                <i class="fa-solid fa-envelope"></i>
+              </label>
+
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="your@domain.com"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="input">
+              <label class="icon-label">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </label>
+              <input
+                type="number"
+                id="user-number"
+                name="user-number"
+                placeholder="+44 00 123"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="input">
+              <label class="icon-label">
+                <i class="fa-solid fa-book"></i>
+              </label>
+
+              <select name="user-subject" id="user-subject">
+                <option value="0">Your subject</option>
+                <option value="1">Math</option>
+                <option value="2">English</option>
+              </select>
+            </div>
+          </div>
+          <div class="item">
+            <div class="input message">
+              <label class="icon-label">
+                <i class="fa-solid fa-comment"></i>
+              </label>
+
+              <textarea
+                name="user-message"
+                id="user-message"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <div class="checkbox">
+            <input type="checkbox" id="check" />
+            <label for="check">Send me a copy of this message</label>
+          </div>
+          <button type="submit">SEND</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

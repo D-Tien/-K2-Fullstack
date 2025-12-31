@@ -1,0 +1,308 @@
+/* ---------
+Bài tập 1
+--------- */
+#Ex01 * {
+  box-sizing: border-box;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+#Ex01 .container {
+  border: 1px solid #ddd;
+  width: 500px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+#Ex01 h2 {
+  font-family: "Lobster";
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#Ex01 p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#Ex01 span {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+#Ex01 .item {
+  margin-bottom: 15px;
+}
+
+#Ex01 .input {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+#Ex01 .icon-label {
+  width: 45px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  border-right: 1px solid #ddd;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#Ex01 input,
+#Ex01 select {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+#Ex01 textarea {
+  flex: 1;
+  height: 120px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 14px;
+  resize: none;
+}
+
+#Ex01 .input.message .icon-label {
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+#Ex01 .input:hover {
+  border-color: #333;
+}
+
+#Ex01 .input:hover .icon-label {
+  background-color: #333;
+  color: #fff;
+}
+
+#Ex01 .input:focus-within {
+  border-color: #333;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+#Ex01 .input:focus-within .icon-label {
+  background-color: #333;
+  color: #fff;
+}
+
+#Ex01 .form-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Ex01 .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#Ex01 .checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+#Ex01 .checkbox label {
+  font-size: 12px;
+  color: #777;
+}
+
+#Ex01 button {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 8px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#Ex01 button:hover {
+  background-color: rgba(255, 0, 0, 0.85);
+}
+/* ---------
+Bài tập 2
+--------- */
+
+.ex02 {
+  background-color: #ebf5fe;
+  font-family: Arial, sans-serif;
+}
+
+#Ex02 .background {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  row-gap: 20px;
+  justify-content: center;
+}
+
+#Ex02 .item {
+  width: 290px;
+  height: 160px;
+  border-radius: 9px;
+  background-color: white;
+  border: 1px solid none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  color: gray;
+}
+
+#Ex02 h3 {
+  color: #000000;
+}
+
+#Ex02 a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #3364d6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#Ex02 .item:hover {
+  border: 2px solid red;
+  transform: translateY(-5px);
+}
+
+#Ex02 .icon {
+  border: none;
+  border-radius: 50%;
+  padding: 9px;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Ex02 .header-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#Ex02 .title {
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+#Ex02 p {
+  font-size: 14px;
+  max-width: 280px;
+  line-height: 18px;
+}
+
+#Ex02 .icon-1 {
+  background-color: #ff8996;
+}
+#Ex02 .icon-2 {
+  background-color: #05ae13;
+}
+#Ex02 .icon-3 {
+  background-color: #df810b;
+}
+#Ex02 .icon-4 {
+  background-color: #032cce;
+}
+#Ex02 .icon-5 {
+  background-color: #c60aad;
+}
+#Ex02 .icon-6 {
+  background-color: #11b821;
+}
+/* ---------
+Bài tập 3
+--------- */
+
+#Ex03 .menu {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin: 15px 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  font-family: system-ui;
+}
+#Ex03 .selections {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Ex03 img {
+  height: 50px;
+}
+
+#Ex03 .logo {
+  display: flex;
+  align-items: center;
+}
+
+#Ex03 .category {
+  margin-left: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #e7e8ed;
+  cursor: pointer;
+}
+
+#Ex03 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Ex03 button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(135deg, #276dd0 0%, #bc20ec 100%);
+}
+
+#Ex03 .selection {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#Ex03 select {
+  border: none;
+}
+
+#Ex03 button:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+
+#Ex03 .category:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+}
