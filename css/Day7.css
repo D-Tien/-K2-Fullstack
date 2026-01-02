@@ -1,10 +1,10 @@
-#Ex01 * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+#Ex01 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f5f5f5;
   padding: 20px;
@@ -96,5 +96,145 @@ body {
   margin-left: auto;
   border-left: 1px solid #eee;
   border-right: none;
-  background-color: #f9f9f9;
+}
+
+/* -------------
+Bài 2
+------------- */
+
+#Ex02 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+}
+
+#Ex02 .container {
+  width: 700px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 300px 400px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 8px 24px;
+}
+
+#Ex02 .login-form-left {
+  background: #eb6254;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+}
+
+#Ex02 .login-form-right {
+  background: white;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+#Ex02 .title > span {
+  padding: 2px 7px;
+  background: white;
+  color: #eb6254;
+  border-radius: 3px;
+}
+
+#Ex02 .introduce {
+  font-size: 12px;
+  text-align: center;
+  padding: 1px 15px;
+}
+
+#Ex02 .btn {
+  background: white;
+  color: #eb6254;
+  border: none;
+  min-height: 30px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#Ex02 .btn:hover {
+  transform: scale(1.1);
+}
+
+#Ex02 .infor {
+  display: flex;
+  gap: 20px;
+}
+
+#Ex02 .login-form-right > h2 > span {
+  color: #eb6254;
+}
+
+#Ex02 .login-form-right > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+#Ex02 .login-account > form > input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 4px 24px;
+  margin-bottom: 10px;
+}
+
+#Ex02 .checkbox {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+#Ex02 .checkbox-left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#Ex02 .checkbox-right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#Ex02 .login-form-right button {
+  background: #eb6254;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+#Ex02 .register {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+#Ex02 .login-form-right button:hover {
+  background: #ca4b3d;
+  transform: scale(1.1);
 }
