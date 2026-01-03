@@ -1,0 +1,123 @@
+#Ex01 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+#Ex01 img {
+  width: 1475px;
+}
+
+#Ex01 .background-image {
+  position: relative;
+  width: 100%;
+}
+
+#Ex01 .infor {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.7);
+  width: 600px;
+  height: 200px;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.734);
+}
+
+#Ex01 .price {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  background: #e65d53;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Ex01 .infor > p {
+  line-height: 20px;
+}
+
+#Ex01 .infor > h2 {
+  color: #dd5e56;
+  opacity: 1;
+}
+
+/* ---------
+Bài 2
+--------- */
+
+#Ex02 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+#Ex02 .banner {
+  position: relative;
+}
+
+#Ex02 .background img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center 50%;
+  display: block;
+}
+
+#Ex02 .infor {
+  position: absolute;
+  display: inline-flex;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  padding: 10px;
+  gap: 25px;
+  color: white;
+}
+
+#Ex02 .logo-image img {
+  width: 270px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+#Ex02 .numbers {
+  display: flex;
+  gap: 20px;
+}
+
+#Ex02 span {
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 4px;
+}
+
+#Ex02 .nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: right;
+  padding-right: 100px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 1.95px 1.95px 2.6px;
+}
+
+#Ex02 .nav > ul > li:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+  color: #dd5e56;
+}
