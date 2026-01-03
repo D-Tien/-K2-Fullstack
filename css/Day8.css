@@ -121,3 +121,94 @@ Bài 2
   text-decoration-thickness: 3px;
   color: #dd5e56;
 }
+
+/* ---------
+Bài 3
+--------- */
+
+#Ex03 {
+  font-family: "Asap", sans-serif;
+}
+
+#Ex03 .header {
+  padding: 20px;
+}
+
+#Ex03 .header-infor {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px;
+}
+
+#Ex03 .location {
+  border-radius: 30px;
+  background-color: #e4e4e4;
+  width: 100px;
+  height: 30px;
+  line-height: 17px;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#Ex03 .title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#Ex03 h4 {
+  margin-left: 10%;
+  color: #775731;
+}
+
+#Ex03 .info {
+  font-size: 10px;
+  font-style: italic;
+}
+
+#Ex03 .title,
+#Ex03 .info {
+  margin: 0;
+}
+
+#Ex03 .location:hover {
+  background: #af7c38;
+  color: white;
+}
+
+#Ex03 .location-image {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
+  justify-content: center;
+}
+
+#Ex03 .location-image .image > img {
+  width: 400px;
+  height: 200px;
+  padding-bottom: 17px;
+}
+
+#Ex03 .location-image .image {
+  position: relative;
+}
+#Ex03 .image-title {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+}
+#Ex03 .image-info {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: white;
+  font-size: 14px;
+}
+
+#Ex03 .image-info > span {
+  font-weight: bold;
+  font-size: 15px;
+}
