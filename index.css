@@ -1,25 +1,15 @@
 :root {
   --primary: #4f46e5;
-  --primary-glow: #818cf8;
   --secondary: #06b6d4;
-
   --bg-body: #0f172a;
   --bg-card: #1e293b;
   --bg-hover: #334155;
-
   --text-main: #f8fafc;
   --text-sub: #94a3b8;
-
   --gradient-text: linear-gradient(135deg, #818cf8 0%, #22d3ee 100%);
-  --gradient-border: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
-
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1); /* Gom gọn border */
   --radius-xl: 24px;
   --radius-lg: 16px;
-  --radius-md: 8px;
   --container: 1200px;
 }
 
@@ -38,13 +28,14 @@ body {
   background-color: var(--bg-body);
   background-image: radial-gradient(
       at 0% 0%,
-      rgba(79, 70, 229, 0.15) 0px,
+      rgba(79, 70, 229, 0.15),
       transparent 50%
     ),
-    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.15), transparent 50%);
+  background-attachment: fixed;
+
   color: var(--text-main);
-  font-family: "Inter", system-ui, sans-serif;
-  line-height: 1.6;
+  font: 400 1rem/1.6 "Inter", sans-serif;
   min-height: 100vh;
 }
 
@@ -57,26 +48,16 @@ body {
 header {
   text-align: center;
   padding: 60px 0 40px;
-  position: relative;
 }
 
 header h1 {
-  font-family: "Outfit", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
+  font: 800 3.5rem "Outfit", sans-serif;
   letter-spacing: -1px;
   margin-bottom: 10px;
-
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-}
-
-header p {
-  color: var(--text-sub);
-  font-size: 1.1rem;
-  font-weight: 400;
 }
 
 .nav-wrapper {
@@ -90,26 +71,21 @@ header p {
 
 .day-menu {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   gap: 8px;
   padding: 10px;
-
   background: rgba(30, 41, 59, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: var(--glass-border);
   border-radius: 999px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-
+  overflow-x: auto;
   scrollbar-width: none;
 }
 .day-menu::-webkit-scrollbar {
   display: none;
 }
-
 .day-menu a {
-  display: inline-block;
   padding: 8px 18px;
   white-space: nowrap;
   text-decoration: none;
@@ -117,7 +93,7 @@ header p {
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 999px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .day-menu a:hover,
@@ -138,8 +114,7 @@ header p {
   padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
-
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
 }
@@ -151,10 +126,8 @@ header p {
 }
 
 .day-card h2 {
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
+  font: 1.5rem "Outfit", sans-serif;
   margin-bottom: 20px;
-  color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -162,7 +135,6 @@ header p {
 
 .day-card h2::before {
   content: "";
-  display: block;
   width: 8px;
   height: 8px;
   background: var(--secondary);
@@ -185,9 +157,8 @@ header p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background 0.2s ease;
+  transition: background 0.2s;
 }
-
 .day-card li:hover {
   background: var(--bg-hover);
 }
@@ -202,11 +173,6 @@ header p {
   gap: 8px;
 }
 
-.ex-link i {
-  color: var(--primary);
-  font-size: 0.8rem;
-}
-
 .src-btn {
   display: flex;
   align-items: center;
@@ -217,8 +183,8 @@ header p {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-sub);
   text-decoration: none;
-  transition: all 0.2s ease;
   border: 1px solid transparent;
+  transition: 0.2s;
 }
 
 .src-btn:hover {
@@ -228,15 +194,11 @@ header p {
   transform: scale(1.1);
 }
 
-.src-btn {
-  position: relative;
-}
-
 footer {
   text-align: center;
   margin-top: 60px;
   padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: var(--glass-border);
   color: var(--text-sub);
   font-size: 0.9rem;
 }
@@ -251,4 +213,14 @@ footer {
   .nav-wrapper {
     top: 10px;
   }
+}
+.ex-link i {
+  color: var(--primary);
+  margin-right: 6px;
+  transition: 0.3s;
+}
+
+.ex-link:hover i {
+  color: #22d3ee;
+  transform: scale(1.1);
 }
