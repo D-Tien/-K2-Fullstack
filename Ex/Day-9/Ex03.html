@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="../Day-9/Ex03.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <h3>Drop Us a Line</h3>
+        <p>
+          Reach out to us from our contact form and we will get back to you
+          shortly.
+        </p>
+      </div>
+
+      <form action="#" class="form-element">
+        <div class="form-body">
+          <div class="form-input">
+            <input type="text" id="first-name" required placeholder=" " />
+            <label for="first-name">First Name *</label>
+          </div>
+          <div class="form-input">
+            <input type="text" id="last-name" required placeholder=" " />
+            <label for="last-name">Last Name *</label>
+          </div>
+          <div class="form-input">
+            <input type="email" id="email" required placeholder=" " />
+            <label for="email">Email *</label>
+          </div>
+          <div class="form-input">
+            <select required id="sales" class="select">
+              <option value="" selected hidden></option>
+              <option value="2">Sales</option>
+              <option value="3">Marketing</option>
+              <option value="4">Customer Support</option>
+            </select>
+            <label for="sales">Select a department</label>
+          </div>
+          <div class="form-message">
+            <textarea id="message" required placeholder=" "></textarea>
+            <label for="message"> Message * </label>
+          </div>
+        </div>
+
+        <div class="form-button">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
