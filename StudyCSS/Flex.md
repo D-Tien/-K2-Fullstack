@@ -31,5 +31,14 @@
 * center
 * baseline
 
-- align-content
+- align-content: căn chỉnh hàng (flex-direction: row), cột (flex-direction: column) --> Chỉ áp dụng từ 2 hàng cột trở lên
+
+* stretch
+* flex-start
+* flex-end
+* center
+* space-between
+* space-around
+* space-evenly
+
 - flex-wrap
